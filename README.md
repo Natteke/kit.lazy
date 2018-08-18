@@ -32,7 +32,7 @@ kit.createLazy({
 | searchClass            | String     | `kit-lazy`  | Search class is used to find elements to work with                 |
 
 ### Usage
-######// full guide under construction
+// full guide under construction
 
 ### Async loaded images
 When you uploading some images, push them with lightweight placeholder.

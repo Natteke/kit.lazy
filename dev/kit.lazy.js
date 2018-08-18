@@ -50,6 +50,7 @@ class KitLazy {
 						if (img.tagName === "IMG") {
 							if (!img.dataset.src) throw new Error('Replaceable image should contain data-src attribute, with link to another image');
 							img.src = img.dataset.src;
+							img.kitAddClass(this.success);
 							img.lazyLoaded = true;
 						} else {
 							img.kitAddClass(this.success);
@@ -74,8 +75,8 @@ class KitLazy {
 		}
 	};
 
-	load = (className = this.searchClass) => {
-		let items = [].slice.call(document.querySelectorAll('.' + className));
+	load = () => {
+		let items = [].slice.call(document.querySelectorAll('.' + this.searchClass));
 		// items = items.filter((e) => !e.lazyLoaded);
 		this.toBeLoad = this.toBeLoad.concat(items);
 		if (this.toBeLoad.length > 0) toggleListeners();
