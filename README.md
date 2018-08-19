@@ -6,6 +6,9 @@ Plugin also works with asynchronously loaded images, has callback on image repla
 ### Link
 Kit Lazy :tada: - https://natteke.github.io/kit/lazy/demos/
 
+### Guide
+If you are not familiar with lazy load, see the <a href="https://natteke.github.io/kit/lazy/docs/#Guide">guide</a>, to find out the core idea of lazy loading, and how to prepare your images before upload.
+
 ## Installation
 #### HTML
 ```HTML
@@ -30,9 +33,6 @@ kit.createLazy({
 | delay                  | Number     | `0`         | Delay before image toggle, or add class to an element                                            |
 | success                | String     | `loaded`    | Success class will be added to the element, when the image will be in viewport      |
 | searchClass            | String     | `kit-lazy`  | Search class is used to find elements to work with                 |
-
-### Usage
-// full guide under construction
 
 ### Async loaded images
 When you uploading some images, push them with lightweight placeholder.
