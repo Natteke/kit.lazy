@@ -26,6 +26,8 @@ kit.createLazy({
 });
 ```
 
+See <a href="https://natteke.github.io/kit/lazy/demos/#Images">demos</a> to figure what is happening with images.
+
 ### Options
 
 | Option                 | Type       | Default     | Description                                                        |
